@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="update.css">
+
+</head>
+
+<body>
+
+
+    
+        <nav class="header">
+
+            <div class="heading">
+                <h1>My Shopee</h1>
+            </div>
+
+
+            <ul class="ul">
+                <li class="li"><a class="a" href="index.html">Home</a></li>
+                <li class="li"><a class="a" href="#">Category</a></li>
+                <li class="li"><a class="a" href="#">Contact</a></li>
+                <li class="li"><a class="a" href="#">About</a></li>
+                <li id="dropdown" class="li"><a class="a" href="#"><i class="fa-regular fa-user"></i></a>
+
+                    <ul class="dropdown-content">
+                        <div class="subli">
+                            <a id="profile" href="#">My Profile</a>
+                        </div>
+                        <div class="subli logout" id="logout">
+                            <input type="submit" value="Logout" id="logout-btn">
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="loading"></div>
+
+
+            <div class="form">
+    
+    
+                <div class="heading">
+                    <h1>Update your date</h1>
+                </div>
+                <form id="login-form">
+                    <div class="field">
+    
+                        <input type="text" id="F-name" placeholder="First name">
+                        <input type="text" id="L-name" placeholder="Last name">
+                        <input type="email" id="email" placeholder="Enter email address" >
+
+    
+                        <input type="submit" value="Update" id="login-btn">
+                        
+    
+                    </div>
+                </form>
+    
+    
+    
+            </div>
+    
+    
+    
+
+    <script type="module" src="firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="profile.js"></script>
+
+</body>
+</body>
+
+</html>

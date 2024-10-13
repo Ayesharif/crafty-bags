@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .sidebar{
+        position: fixed;
+        height: 100%;
+        width: 250px;
+        left: 0;
+        top: 0;
+        transition: 1s;
+        z-index: 1;
+        /* position: ; */
+        background-color: black;
+        padding: 20px 0px;
+    }
+    .sidebar a{
+        transition: 5s;
+        font-size: 25px;
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin: 50px 50px;
+    }
+    .sidebar .close{
+        position: absolute;
+        top: 0;
+        right: 0px;    
+        font-family: sans-serif;
+    }
+</style>
+
+</head>
+
+
+<body>
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close" onclick="closenav()">X</a>
+        <a href="" >Home</a>
+        <a href="" >Profile</a>
+        <a href="" >About</a>
+        <a href="" >Contact</a>
+        
+    </div>
+    <i class="fa-solid fa-xmark"></i>   
+    <h1>Animated Side Bar </h1>
+    <a href="javascript:void(0)" class="open" onclick="opennav()">Open</a>
+    <script>
+        function closenav(){
+            document.getElementById("sidebar").style.width="0";
+        }
+        function opennav(){
+            document.getElementById("sidebar").style.width="250px";
+        }
+    </script>
+</body>
+</html>

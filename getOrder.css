@@ -1,0 +1,427 @@
+:root {
+    --smallT: 16px;
+    --midT: 25px;
+    --largeT: 30px;
+    --Dcolor: rgb(4, 134, 129);
+    --Lcolor: rgb(100, 184, 181);
+    --Hovcolor: rgb(16, 196, 190);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-image: url(images/bg.jpg); */
+    object-fit: cover ;
+    
+}
+header{
+    
+    display: flex;flex-direction: column;
+}
+nav {
+
+    width: 100%;
+
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--Dcolor);
+}
+
+    /* .navbar{
+        width: 100%;
+    } */
+    .heading{
+        width: 300px;
+        font-size: var(--largeT);
+        text-align: center;
+    }
+.ul{
+    
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+
+}
+.li{
+    padding: 10px 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: var(--midT);
+}
+.li:hover, .dropdown-content{
+    background-color:var(--Hovcolor);
+}
+
+.dropdown-items a, .dropdown-items input{
+    font-size: var(--smallTT);
+    font-weight: 500;
+    font-family:  sans-serif;
+    cursor: pointer;
+
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: forestgreen; */
+    min-width: 160px;
+    margin: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-items {
+   margin: 10px;
+    padding: 10px ;
+    color: black;
+    padding: 12px 16px;
+    font-size: var(--smallT);
+    text-decoration: none;
+cursor: pointer;
+
+    display: block;
+    clear: both;
+    text-align: center;
+}
+
+.dropdown-items:hover{
+    background-color: white;
+}
+
+#dropdown:hover .dropdown-content {
+    content: "";
+    transform: translateX(10deg);
+    display: block;
+}
+
+.dropdown-items input[type=submit] {
+    width: 100px;
+    height: max-content;
+    /* font-size: var(--smallT); */
+    /* margin: 20px; */
+    border: none;
+    background-color: transparent;
+
+
+}
+
+div .logout-btn{
+    background-color: var(--Lcolor);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+div .fa-bars{
+display: none;
+}
+
+
+.details{
+
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'first first middle middle middle end';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+
+  
+}
+.Cont-top{
+    background-color: antiquewhite;
+    
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-area: header;
+}
+.Cont-top div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.Cont-middle{
+ 
+    grid-area: middle;
+    color: #000;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+}
+.Cont-middle div {
+    height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+column-gap: 50px;
+}
+.Cont-middle div div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.Cont-first{
+/* flex-basis: 30%; */
+    display: flex;
+    grid-area: first;
+justify-content: space-around;
+flex-direction: column;
+row-gap: 50px;
+}
+.Cont-first div{
+    width: 100%;
+    /* flex-basis: 30%; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.first div{
+    width: 30%;
+}
+.first img{
+    width: 100px;
+
+}
+
+
+ .details1{
+
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'first first first first first first';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+
+
+  
+}
+ .Cont-top1{
+    background-color: antiquewhite;
+    
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-area: header;
+}
+ .Cont-top1 div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ .Cont-first1{
+flex-basis: 60%;
+
+    display: flex;
+    grid-area: first;
+justify-content: space-evenly;
+flex-direction: column;
+row-gap: 50px;
+}
+ .Cont-first1 div{
+    width: 100%;
+    /* flex-basis: 30%; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+ .first1 div{
+    /* width: 20%; */
+}
+ .first1 img{
+    width: 100px;
+
+}
+.first1 .mid{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.first1 .mid div {
+width: 100%;
+margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+    .print , .print1{
+        display: flex;
+        align-items: center;
+        grid-area: end;
+    }
+    .print div input , .print1 div input{
+        cursor: pointer;
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+
+    }
+    .print div input:hover, .print1 div input:hover{
+ box-shadow: 1px 1px 5px 1px black;
+    }
+    .ul .fa-xmark{
+        display: none;
+        font-size: var(--largeT);
+    }
+    @media (max-width:815px) {
+        div .fa-bars{
+            
+            display: block;
+            font-size: var(--midT);
+        }
+        .ul{
+            height: 100%;
+            width: 230px;
+        /* display: none; */
+        flex-direction: column;
+        position: fixed;
+        z-index: 2;
+        top: 0px;
+        right: 0;
+        background-color: var(--Lcolor);
+        align-items: end;
+        transition: 2s;
+        }
+        .li{
+            margin-right: 10px;
+            transition: 1s;
+        }
+        .ul .fa-xmark{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 20px;
+            
+        }
+        .dropdown-content{
+            margin: 10px 0px 0px -100px;
+        }
+        
+        .heading{
+            width: max-content;
+        }
+    
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+     /* import { getDatabase, databaserf, child, db, get } from "./firebase.js";
+
+window.addEventListener('DOMContentLoaded', async (event) => {
+    const dbRef = databaserf(db);
+
+    try {
+        // Fetch order details from Firebase
+        const snapshot = await get(child(dbRef, 'OrderDetails'));
+        if (snapshot.exists()) {
+            const orders = snapshot.val(); // Get all the order data
+            const orderContainer = document.getElementById("card"); // Main container
+
+            // Loop through each order (assuming orders is an object)
+            for (let orderId in orders) {
+                let order = orders[orderId]; // Each individual order object
+
+                // Create a new order card for each order
+                const card = document.querySelector(".details").cloneNode(true);
+
+                for (let senderId in order) {
+                    let orderDetails = order[senderId]; // Individual order details (like fname, lname, etc.)
+
+                    // Fill in the order details into the card
+                    card.querySelector('.byName').textContent = orderDetails.fname || 'No Name'; // Set the order by name
+                    card.querySelector('.id').textContent = orderDetails.orderid || 'No ID'; // Set the order ID
+                    
+                    // Loop through products in the order
+                    const productList = orderDetails.products; // Array of products
+                    const firstContainer = card.querySelector(".Cont-first"); // Target the first container
+
+                    // Remove existing product details in the clone (if any)
+                    firstContainer.innerHTML = ''; 
+
+                    for (let productId in productList) {
+                        let product = productList[productId]; // Individual product details
+
+                        // Fetch product details from 'products' node
+                        const productSnapshot = await get(child(dbRef, 'products/' + product.id));
+                        if (productSnapshot.exists()) {
+                            const productData = productSnapshot.val(); // Get the actual product data
+
+                            // Clone and insert the product details
+                            const productCard = document.querySelector('.first').cloneNode(true);
+
+                            productCard.querySelector('.name').textContent = productData.ProductName || 'No Product Name'; // Product name
+                            productCard.querySelector('.price').textContent = productData.Price || 'No Price'; // Product price
+                            productCard.querySelector('.image').src = productData.imageUrls || 'No Image'; // Product image
+                            productCard.querySelector('.quantity').textContent = product.quantity
+                                ? product.quantity.replace('Quantity: ', '') // Remove "Quantity: " and leave only the number
+                                : 'No Quantity';
+
+                            // Append the productCard to the firstContainer
+                            firstContainer.appendChild(productCard);
+                        } else {
+                            console.log(`Product with ID ${product.id} not found`);
+                        }
+                    }
+
+                    // Fill in other order details (middle container)
+                    const middleContainer = card.querySelector('.middle');
+                    middleContainer.querySelector('.delivery').textContent = orderDetails.deliveryCharge || '0'; // Delivery charge
+                    middleContainer.querySelector('.total').textContent = orderDetails.subtotal || '0'; // Subtotal
+                }
+
+                // Append the complete order card to the main container
+                orderContainer.appendChild(card);
+            }
+
+            // Optionally, remove the original template card (if it exists)
+            document.querySelector('.details').remove();
+        } else {
+            console.log("No orders available");
+        }
+    } catch (error) {
+        console.error("Error fetching data:", error);
+    }
+}); */

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            display: flex;
+            flex-direction: column;
+            row-gap: 50px;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+        }
+.heading{
+    font-size: 40px;
+    font-weight: 900;
+}
+        .order {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .order tr td{
+            border: 1px solid black;
+        }
+
+        .order .Pname,
+        .order .Pimage,
+        .order .Pprice,
+        .order .Pquantity {
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .order:nth-child(2) {
+            width: 200px;
+        }
+
+        .image {
+            width: 150px;
+            border-radius: 10px;
+        }
+
+        table {
+            /* width: 100%; */
+            border-collapse: collapse;
+
+        }
+
+        tr {
+            width: 100%;
+        }
+
+        td {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .Oheading td{
+            padding: 0;
+            text-align: center;
+            padding: 10px 0px;
+        }
+        .payment{
+            display: flex;
+            justify-content: end;
+        }
+        .payment tr td{
+            width: 150px;
+        }
+        .payment tr:last-child{
+            font-weight: bold;
+        }
+        .package{
+            margin: 50% 0;
+            width: 60%;
+        }
+        .package td{
+            /* width: 300px; */
+            height: 50px;
+
+        }
+
+        @media print {
+            /* .order{
+                justify-content: space-between;
+            } */
+             .print{
+                display: none;
+             }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div><input class="print" type="button" value="Print"></div>
+        <section id="container">
+            <div class="heading">
+                <p>Crafty Bags</p>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <td>Order ID:</td>
+                        <td class="orderid"></td>
+                        <td>Payment Method:</td>
+                        <td class="method"></td>
+                    </tr>
+                    <tr>
+                        <td>Customer:</td>
+                        <td class="name"></td>
+                        <td>Contact:</td>
+                        <td class="contact"></td>
+                    </tr>
+                    <tr>
+                        <td>Postal Code</td>
+                        <td class="postalcode"></td>
+                        <td>Address:</td>
+                        <td class="address"></td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td class="city"></td>
+                        <td>Country:</td>
+                        <td class="country"></td>
+                    </tr>
+
+                </table>
+            </div>
+            <table class="Oheading" >
+                <th>
+                    <tr>
+                        <td>Product Image</td>
+                        <td>Product Name</td>
+                        <td>Product Quantity</td>
+                        <td>Product Price</td>
+                    </tr>
+                </th>
+            </table>
+            <div class="order">
+                <tr>
+
+                    <td>
+                        
+                        <div class="Pimage">
+                            
+                            <img class="image" src="" alt="">
+                        </div>
+                    </td>
+                    <td>
+
+                        <div class="Pname">
+                            <p class="pname"></p>
+                        </div>
+                    </td>
+                    <td>
+
+                        <div class="Pquantity">
+                            <p class="quantity"></p>
+                        </div>
+                    </td>
+                    <td>
+
+                        <div class="Pprice">
+                            <p class="price"></p>
+                        </div>
+                    </td>
+                </tr>
+            </div>
+
+
+        </section>
+        <table class="payment">
+            <tr>
+                <td>Subtotal</td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td>Delivery Charges</td>
+                <td class="delivery"></td>
+            </tr>
+            <tr>
+                <td>Delivery Charges</td>
+                <td class="total"></td>
+            </tr>
+        </table>
+
+        <table class="package">
+            <tr>
+                <td>No of Products</td>
+                <td class="Nopro"></td>
+            </tr>
+            <tr>
+                <td>Seller Address</td>
+                <td>House 60/A (road side), unit 10 Latifabad, Hyderabad</td>
+            </tr>
+            <tr>
+                <td>Deliver To</td>
+                <td class="Cname"></td>
+            </tr>
+            <tr>
+                <td>Contact</td>
+                <td class="Ccontact"></td>
+            </tr>
+            <tr> 
+                <td>Delivery Address</td>
+                <td class="Caddress"></td>
+            </tr>
+            <tr>
+                <td>Total Payment</td>
+                <td class="cost"></td>
+            </tr>
+        </table>
+    </main>
+    <script src="print.js"></script>
+</body>
+
+</html>

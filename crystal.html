@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="stylesheet" href="spinner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+    <div id="emailverification">
+
+        <nav class="header">
+            <div class="heading">
+                <h1>Crafty Bags</h1>
+            </div>
+            <div>
+                <a href="" id="open" >
+
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+
+
+            <ul class="ul" id="ul">
+                <a href="" id="close" >
+
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+
+                <li class="li"><a class="a" href="index.html">Home</a></li>
+                <li id="dropdown" class="li"><a class="a" href="#">Category</a>
+                
+                    <ul class="dropdown-content">
+                        
+                        <div class="dropdown-items">
+<input type="submit" id="pearl-bags" value="Pearl bags">
+                        </div>
+                        <div class="dropdown-items">
+                            <input type="submit" id="crystal-bags"  value="Crystal bags">
+                        </div>
+                    </ul>
+                </li>
+                <li class="li" id="ap"><a class="a" href="#">AddProduct</a></li>
+                <li class="li" id="dropdown"> <a class="a" href=" ">Contact</a>
+                    <ul class="dropdown-content">
+                        <div class="dropdown-items">
+                            <a href="https://wa.me/+923130306029">Whatsapp</a>
+                        </div>
+                        <div class="dropdown-items">
+                            <a href="mailto:ayeshrf@gmail.com">Email</a>
+                        </div>
+                    </ul>
+                </li>
+
+                <li id="dropdown" class="li"><a class="a" href="#"><i class="fa-regular fa-user"></i></a>
+
+                    <ul class="dropdown-content">
+                        <div class="dropdown-items">
+                            <a id="profile">My Profile</a>
+                        </div>
+                        <div class="dropdown-items logout" id="logout">
+                            <input type="submit" id="login" value="Logout" id="logout-btn">
+                        </div>
+                    </ul>
+                </li>
+                <li class="li"><a class="a" id="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+
+
+<!-- 
+        <div class="topbar">
+            <div class="search">
+                <input type="search" id="search" placeholder="Fullfil your dream with your search">
+            </div>
+
+            <div class="filter">
+           <ul class="filterMenu">
+            <li id="dropdown" class="filterItem">
+                <div class="filterItem-div">
+                    <p>Filter</p>
+                    <i class="fa-solid fa-filter"></i>
+                </div>
+
+                <ul class="dropdown-content">
+                    <div class="dropdown-items">
+                        <p class="best-match">Best Match</p>
+                    </div>
+                    <div class="dropdown-items">
+                        <p class="low-high">Low to High</p>
+                    </div>
+                    <div class="dropdown-items">
+                        <p class="high-low">High to Low</p>
+                    </div>
+                </ul>
+            </li>
+           </ul>
+            </div>
+
+
+
+        </div> -->
+
+        <div class="loading"></div>
+<main>
+
+    <div class="products" id="products-container">
+
+        <div class="card">
+
+            <img class="p-image card-items" src="" alt="product image">
+            
+            <p class="p-name card-items"></p>
+            <p class="p-color card-items"></p>
+            <p class="p-price card-items"></p>
+            <input class="card-items" type="submit" value="Add to card">
+            
+        </div>
+    
+    </div>
+</main>
+<footer>
+    <div class="F-text">
+        <h1>Crafty Bags</h1>
+        <h3>Copyright © 2024</h3>
+    </div>
+    <div class="navitm">
+        <ul class="list">
+            <li><a class="item" href="index.html">Home</a></li>
+            <li><a class="item" href="pearl.html">Pearl bags</a></li>
+            <li><a class="item" href="crystal.html">Crystal bags</a></li>
+            
+        </ul>
+    </div>
+    <div class="social">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+    </div>
+</footer>
+    </div>
+    <div id="notverified">
+        <div>
+            <h1>Verify You Email</h1>
+        </div>
+        <div>
+            <p>We have sent you email verificarion link so please first open your email and click the avaliable
+                link.
+            </p>
+        </div>
+        <input type="submit" value="Logout" id="logout-btn" class="logout-btn">
+
+    </div>
+
+    <script type="module" src="logout.js"></script>
+    <script src="spinner.js"></script>
+    <script type="module" src="firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="crystal.js"></script>
+    <script type="module" src="header.js"></script>
+
+</body>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="addproduct.css">
+<link rel="stylesheet" href="spinner.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <div class="loading"></div>
+    <div class="main">
+
+
+        <nav class="header">
+            <div class="heading">
+                <h1>Crafty Bags</h1>
+            </div>
+            <div>
+                <a href="" id="open" >
+
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+
+
+            <ul class="ul" id="ul">
+                <a href="" id="close" >
+
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+
+                <li class="li"><a class="a" href="index.html">Home</a></li>
+                <li id="dropdown" class="li"><a class="a" href="#">Category</a>
+                
+                    <ul class="dropdown-content">
+                        
+                        <div class="dropdown-items">
+<input type="submit" id="pearl-bags" value="Pearl bags">
+                        </div>
+                        <div class="dropdown-items">
+                            <input type="submit" id="crystal-bags"  value="Crystal bags">
+                        </div>
+                    </ul>
+                </li>
+                <li class="li" id="ap"><a class="a" href="#">AddProduct</a></li>
+                <li class="li" id="dropdown"> <a class="a" href=" ">Contact</a>
+                    <ul class="dropdown-content">
+                        <div class="dropdown-items">
+                            <a href="https://wa.me/+923130306029">Whatsapp</a>
+                        </div>
+                        <div class="dropdown-items">
+                            <a href="mailto:ayeshrf@gmail.com">Email</a>
+                        </div>
+                    </ul>
+                </li>
+
+                <li id="dropdown" class="li"><a class="a" href="#"><i class="fa-regular fa-user"></i></a>
+
+                    <ul class="dropdown-content">
+                        <div class="dropdown-items">
+                            <a id="profile">My Profile</a>
+                        </div>
+                        <div class="dropdown-items logout" id="logout">
+                            <input type="submit" id="login" value="Logout" id="logout-btn">
+                        </div>
+                    </ul>
+                </li>
+                <li class="li"><a class="a" id="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+
+
+
+
+        <div class="form">
+
+
+            <div class="Fheading">
+                <h1>Add Product</h1>
+            </div>
+            <form id="addproduct-form">
+                <div class="field">
+                    <div class="cate">
+
+                        <div>
+
+                            <label>
+                                Pearl bages
+                                <input type="checkbox" value="Pearl" name="box" id="category">
+                            </label>
+                            <label>
+                                Crystal bages
+                                <input type="checkbox" value="Crystal" name="box" id="category">
+                            </label>
+                        </div>
+
+                    </div>
+                    
+                    <input type="text" id="p-name" placeholder="name" required>
+                    <input type="text" id="p-description" placeholder="description" required>
+                    <input type="number" id="price" placeholder="price" required>
+                    <input type="file" accept="jpg, png, jpeg" id="image" multiple required>
+                    <input type="submit" value="Add" id="submitbtn">
+
+
+                </div>
+            </form>
+
+
+
+        </div>
+
+    </div>
+
+<script src="spinner.js"></script>
+    <script type="module" src="firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.24.0/firebase-auth.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="addproduct.js"></script>
+    <script type="module" src="header.js"></script>
+    <script></script>
+</body>
+
+</html>

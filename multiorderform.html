@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="orderform.css">
+    <link rel="stylesheet" href="spinner.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav class="header">
+        <div class="heading">
+            <h1>Crafty Bags</h1>
+        </div>
+        <div>
+            <a href="" id="open" >
+
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+
+
+        <ul class="ul" id="ul">
+            <a href="" id="close" >
+
+                <i class="fa-solid fa-xmark"></i>
+            </a>
+
+            <li class="li"><a class="a" href="index.html">Home</a></li>
+            <li id="dropdown" class="li"><a class="a" href="#">Category</a>
+            
+                <ul class="dropdown-content">
+                    
+                    <div class="dropdown-items">
+<input type="submit" id="pearl-bags" value="Pearl bags">
+                    </div>
+                    <div class="dropdown-items">
+                        <input type="submit" id="crystal-bags"  value="Crystal bags">
+                    </div>
+                </ul>
+            </li>
+            <li class="li" id="ap"><a class="a" href="#">AddProduct</a></li>
+            <li class="li" id="dropdown"> <a class="a" href=" ">Contact</a>
+                <ul class="dropdown-content">
+                    <div class="dropdown-items">
+                        <a href="https://wa.me/+923130306029">Whatsapp</a>
+                    </div>
+                    <div class="dropdown-items">
+                        <a href="mailto:ayeshrf@gmail.com">Email</a>
+                    </div>
+                </ul>
+            </li>
+
+            <li id="dropdown" class="li"><a class="a" href="#"><i class="fa-regular fa-user"></i></a>
+
+                <ul class="dropdown-content">
+                    <div class="dropdown-items">
+                        <a id="profile">My Profile</a>
+                    </div>
+                    <div class="dropdown-items logout" id="logout">
+                        <input type="submit" id="login" value="Logout" id="logout-btn">
+                    </div>
+                </ul>
+            </li>
+            <li class="li"><a class="a" id="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <div class="loading"></div>
+    <main>
+        <section id="delivery">
+            <form id="orderdetails">
+                <h1>Delivery Details</h1>
+                <div class="outer">
+                    <div class="inner">
+                        <label for="fname">First name</label>
+                        <input type="text" name="fname" id="fname">
+
+                    </div>
+                    <div class="inner">
+
+                        <label for="lname">Last name</label>
+                        <input type="text" name="lname" id="lname">
+                    </div>
+                </div>
+
+                <div class="outer">
+                    <div class="inner">
+
+                        <label for="contact">Contact</label>
+                        <input type="tel" name="contact" id="contact">
+                    </div>
+                    <div class="inner">
+
+                        <label for="postal">Postal Code</label>
+                        <input type="text" name="postal" id="postal-code">
+                    </div>
+                </div>
+                <div class="outer">
+
+                    <div class="inner address">
+                        <label for="address">Address</label>
+                        <input type="text" name="address" id="address">
+                    </div>
+                </div>
+                <div class="outer">
+
+                    <div class="inner">
+
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div class="inner">
+
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="UAE">UAE</option>
+                            <option value="USA">USA</option>
+                        </select>
+                    </div>
+                </div>
+                <h1>Payment Options</h1>
+                <div class="outer payment">
+                    <div class="inner">
+                        <label for="payment">Cash On Delivery</label>
+                        <input type="radio" name="payment" id="cod" value="COD">
+                        
+                    </div>
+
+                        <div class="inner   ">
+
+                            <p >Online Payment</p>
+                        </div>
+
+
+
+                </div>
+                <div class="btn">
+                    <input type="submit" value="Complete Order" id="order-complete">
+                </div>
+            </form>
+        </section>
+
+        <section id="order">
+            <div id="multiorder">
+
+
+            <div id="details">
+                <div>
+                    <img src="" id="p-image" alt="Product image">
+
+                </div>
+                <div>
+                    <div>
+                        <p id="p-name"></p>
+                    </div>
+
+                    <div>
+                        <label for="">Price</label>
+                        <p id="p-price"></p>
+                    
+                    </div>
+                    <div>
+                        <label for="">Quantity</label>
+                     <p id="quantity"></p>
+
+                    </div>
+                    <div>
+                        <label for="">Subtotal</label>
+                        <p class="subTotal"></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="full-payment" id="full-payment">
+            <div>
+                <label for="">Subtotal</label>
+                <p class="compTotal" id="compTotal"></p>
+            </div>
+            <div>
+                <label for="">Shipping Charges</label>
+                <p id="shipping"></p>
+            </div>
+            <div>
+                <label for="">Total amount</label>
+                <p id="total"></p>
+            </div>
+        </div>
+        </section>
+
+    </main>
+
+<script src="spinner.css"></script>
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="header.js"></script>
+    <script type="module" src="multiorder.js"></script>
+    <script src="spinner.js"></script>
+    <script type="module" src="add-product-auth.js"></script>
+</body>
+
+</html>

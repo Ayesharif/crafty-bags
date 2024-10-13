@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="spinner.css">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .form {
+            width: 100hw;
+            height: 100vh;
+            /* height: max-content; */
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .heading {
+            width: 100hw;
+            /* display: flex; 
+       justify-content: center;
+       align-items: center; */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .field {
+            align-self: center;
+            justify-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        input[type=email],
+        input[type=password] {
+            display: block;
+            /* width: 150%; */
+            margin: 20px;
+            padding: 10px 50px;
+            border: 1px solid lightgray;
+
+            /* border-color: lightgray; */
+        }
+
+        input[type=submit] {
+            width: 150px;
+            height: 30px;
+            margin: 20px;
+            border: none;
+            background-color: rgb(146, 239, 239);
+            border-radius: 10px;
+
+        }
+        a{
+            text-decoration: none;
+            color: red;
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="loading"></div>
+    <div class="main">
+
+
+
+        <div class="form">
+
+
+            <div class="heading">
+                <h1>Forgot Password Page</h1>
+            </div>
+            <form id="login-form">
+                <div class="field">
+
+                    <input type="email" id="email" >
+                    <input type="submit" value="Reset" id="reset-btn">
+                    <a href="login.html">I know the password</a>
+
+                </div>
+            </form>
+
+
+
+        </div>
+
+    </div>
+
+<script src="spinner.js"></script>
+    <script type="module" src="firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.24.0/firebase-auth.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="forgotpas.js"></script>
+
+    <script></script>
+</body>
+
+</html>

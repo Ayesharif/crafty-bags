@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="spinner.css">
+</head>
+
+<body>
+
+
+    <div id="emailverification">
+
+        <nav class="header">
+            <div class="heading">
+                <h1>Crafty Bags</h1>
+            </div>
+            <div>
+                <a href="" id="open" >
+
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+
+
+            <ul class="ul" id="ul">
+                <a href="" id="close" >
+
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+
+                <li class="li"><a class="a" href="index.html">Home</a></li>
+                <li id="dropdown" class="li"><a class="a" href="#">Category</a>
+                
+                    <ul class="dropdown-content">
+                        
+                        <div class="dropdown-items">
+<input type="submit" id="pearl-bags" value="Pearl bags">
+                        </div>
+                        <div class="dropdown-items">
+                            <input type="submit" id="crystal-bags"  value="Crystal bags">
+                        </div>
+                    </ul>
+                </li>
+                <li class="li" id="ap"><a class="a" href="#">AddProduct</a></li>
+                <li class="li" id="dropdown"> <a class="a" href=" ">Contact</a>
+                    <ul class="dropdown-content">
+                        <div class="dropdown-items">
+                            <a href="https://wa.me/+923130306029">Whatsapp</a>
+                        </div>
+                        <div class="dropdown-items">
+                            <a href="mailto:ayeshrf@gmail.com">Email</a>
+                        </div>
+                    </ul>
+                </li>
+
+                <li id="dropdown" class="li"><a class="a" href="#"><i class="fa-regular fa-user"></i></a>
+
+                    <ul class="dropdown-content">
+                        <div class="dropdown-items">
+                            <a id="profile">My Profile</a>
+                        </div>
+                        <div class="dropdown-items logout" id="logout">
+                            <input type="submit" id="login" value="Logout" id="logout-btn">
+                        </div>
+                    </ul>
+                </li>
+                <li class="li"><a class="a" id="cart" href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+
+
+
+        <!-- <div class="front-profile">
+            <h1 id="name"></h1>
+            <img id="image" src="" alt="profile image">
+        </div> -->
+        <div class="loading"></div>
+<main>
+
+    <aside>
+
+    
+    <div class="ppic">
+        <img id="image" src="" alt="profile image">
+        <hr>
+    </div>
+
+<div class="p-details"> 
+   <div class="sub-details">
+       <label > First Name :  </label>
+        <p id="firstN"></p>
+   </div> 
+   <hr>
+
+   <div class="sub-details">
+       <label > Last Name :  </label>
+        <p id="lastN"></p>
+   </div>
+<hr>
+   <div class="sub-details">
+       <label > Email Address :  </label>
+        <p id="email"></p>
+   </div>
+   <hr>
+   
+</div>
+ <div class="change-btn">
+        <a id="change-btn">Update Profile</a>
+    </div>
+    </aside>
+
+<section id="myorders">
+    <div>
+        <h1>My Orders</h1>
+    </div>
+    
+    <div id="details">
+        <div class="image">
+            <img src="" id="p-image" alt="Product image">
+            
+            <div>
+                <div>
+                    <p id="p-name"></p>
+                </div>
+                <div class="des">
+
+                    
+                    <div>
+                        <label for="">Price</label>
+                        <p id="p-price"></p>
+                        
+                    </div>
+                    <div>
+                        <label for="">Quantity</label>
+                        <p id="quantity"></p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+           
+
+        </div>
+
+</section>
+</main>
+        
+
+    <script type="module" src="logout.js"></script>
+    <script src="spinner.js"></script>
+    <script type="module" src="firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="profile.js"></script>
+    <script type="module" src="header.js"></script>
+
+</body>
+</body>
+
+</html>

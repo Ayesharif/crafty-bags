@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --smallT: 16px;
+    --midT: 25px;
+    --largeT: 30px;
+    --Dcolor: rgb(4, 134, 129);
+    --Lcolor: rgb(100, 184, 181);
+    --Hovcolor: rgb(16, 196, 190);
+
+}
+
+
+header{
+
+display: flex;flex-direction: column;
+}
+nav {
+/* position: sticky; */
+width: 100%;
+
+padding: 20px 0px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+background-color: var(--Dcolor);
+}
+
+/* .navbar{
+width: 100%;
+} */
+.heading{
+width: 300px;
+font-size: var(--largeT);
+text-align: center;
+}
+.ul{
+
+width: 80%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-items: center;
+list-style: none;
+
+}
+.li{
+padding: 10px 20px;
+}
+
+a{
+text-decoration: none;
+color: black;
+font-size: var(--midT);
+}
+.li:hover, .dropdown-content{
+background-color:var(--Hovcolor);
+}
+
+.dropdown-items a, .dropdown-items input{
+font-size: var(--smallTT);
+font-weight: 500;
+font-family:  sans-serif;
+cursor: pointer;
+
+}
+
+
+.dropdown-content {
+display: none;
+position: absolute;
+/* background-color: forestgreen; */
+min-width: 160px;
+margin:10px 20px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+z-index: 1;
+}
+
+.dropdown-items {
+margin: 10px;
+padding: 10px ;
+color: black;
+padding: 12px 16px;
+font-size: var(--smallT);
+text-decoration: none;
+cursor: pointer;
+
+display: block;
+clear: both;
+text-align: center;
+}
+
+.dropdown-items:hover{
+background-color: white;
+}
+
+#dropdown:hover .dropdown-content {
+content: "";
+transform: translateX(10deg);
+display: block;
+}
+
+.dropdown-items input[type=submit] {
+width: 100px;
+height: max-content;
+/* font-size: var(--smallT); */
+/* margin: 20px; */
+border: none;
+background-color: transparent;
+
+
+}
+
+div .logout-btn{
+background-color: var(--Lcolor);
+padding: 10px;
+border-radius: 10px;
+cursor: pointer;
+}
+
+div .fa-bars{
+display: none;
+}
+
+.ul .fa-xmark{
+display:none;
+}
+
+label{
+display: flex;
+align-items: center;
+column-gap: 30px;
+}
+.label{
+padding-top: 20px;
+}
+.label p{
+font-size: var(--midT);
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    /* height: max-content; */
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.Fheading {
+width: 300px;
+    font-size: var(--midT);
+    text-align: center;
+    padding: 20px;
+}
+
+.field {
+    width: max-content;
+    
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Lcolor);
+    border-radius: 10px;
+    /* padding: 20px; */
+    gap: 20px;
+
+}
+
+input[type=email],
+input[type=text],
+input[type=number],
+input[type=password],
+input[type=file]
+ {
+    display: block;
+font-size: var(--midT);
+    margin: 10px;
+    padding: 10px 50px;
+    border: 1px solid lightgray;
+
+    /* border-color: lightgray; */
+}
+
+input[type=submit] {
+    
+    font-size: var(--midT);
+    width: 150px;
+    height: 40px;
+    margin: 20px;
+
+    border: none;
+    background-color: rgb(146, 239, 239);
+    border-radius: 10px;
+
+}
+input[type=submit] :hover{
+    box-shadow: 1px 1px 10px 1px black;
+    background-color: aliceblue;
+}
+
+.cate{
+    display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+height: 50px;
+}
+
+ .cate p{
+    font-size: var(--largeT);
+}
+.cate div{
+    display: flex;
+    flex-direction: row;
+}
+.cate label{
+    font-size: 25px;
+}
+
+@media (max-width:900px) {
+div .fa-bars{
+    
+    display: block;
+    font-size: var(--midT);
+}
+.ul{
+    height: 100%;
+    width: 230px;
+/* display: none; */
+flex-direction: column;
+position: fixed;
+z-index: 2;
+top: 0px;
+right: 0;
+background-color: var(--Lcolor);
+align-items: end;
+/* display: block; */
+transition: 2s;
+}
+.li{
+    margin-right: 10px;
+    transition: 1s;
+}
+.ul .fa-xmark{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    
+}
+.dropdown-content{
+    margin: 10px 0px 0px -100px;
+}
+
+.heading{
+    width: max-content;
+}
+
+    
+}
+
+@media (max-width:700px) {
+    .field{
+        width: 100vw;
+    }
+    input[type=email],
+input[type=text],
+input[type=number],
+input[type=password],
+input[type=file]{
+    width: 50%;
+    margin: 0%;
+}
+
+.Fheading{
+    font-size: 5vw;
+}
+}
+@media (max-width:360px) {
+    .cate .label{
+display: block;
+    }
+}
